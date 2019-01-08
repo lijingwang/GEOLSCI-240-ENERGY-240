@@ -12,5 +12,5 @@ from log_hyperbolic_sampling import *
 ## Example: 
 ## Get 1000 samples on Case 2: alpha = 0.5, phi = 1, mu = 1,delta = 1. 
 ## It should take around 40s
-sample_array = log_hyperbolic_sampling(N = 1000, alpha = 0.5, phi = 1, mu = 1,delta = 1)
+sample_array = log_hyperbolic_sampling(N = 1000, alpha = 0.5, phi = 1, mu = 1, delta = 1)
 ```
