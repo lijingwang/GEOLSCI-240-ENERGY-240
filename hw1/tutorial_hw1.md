@@ -1,17 +1,21 @@
-Here we provide the python code for **log-hyperbolic distribution sampling using CDF inversion**. 
+Here we provide the python code for **log-hyperbolic distribution sampling using CDF inversion** and **log-normal distribution sampling**
 
 ## Install and Usage
-To use the code for sampling, please put [log_hyperbolic_sampling.py](https://github.com/lijingwang/GEOLSCI-240-ENERGY-240/blob/master/hw1/log_hyperbolic_sampling.py) into your python path. 
+To use the code for sampling, please put the *extreme_value_sampling.py* into your python path. 
 
-If you are using Jupyter Notebook for python, just put the *.py* file in your current *.ipynb* folder. 
+If you are using Jupyter Notebook for python, just put the *extreme_value_sampling.py* file in your current *.ipynb* folder. 
 
 The sampler can be used as follows:  
 ```python
-from log_hyperbolic_sampling import *
+from extreme_value_sampling import *
 
 ## Example: 
-## Get 1000 samples on Case 2: alpha = 0.5, phi = 1, mu = 1,delta = 1. 
-## It should take around 1 min for 1000 samples. 
+## Get 1000 samples from log-hyperbolic distribution: phi = 3.61, gamma = 2.12, mu = -0.54, delta = 1.3,. 
+## It should take around 10s for 1000 samples. 
 
-sample_array = log_hyperbolic_sampling(N = 1000, alpha = 0.3, phi = 1, mu = 1, delta = 1)
+sample_array_log_hyper = log_hyperbolic_sampling(N = 1000, phi = 3.61, gamma = 2.12, mu = -0.54, delta = 1.3)
+
+## Get 1000 samples from log-normal distribution: mu = 0, sigma = 1.5 
+
+sample_array_log_normal = log_normal_sampling(N = 1000, mu = 0, sigma = 1.5 )
 ```
