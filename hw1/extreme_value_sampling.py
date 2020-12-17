@@ -4,7 +4,7 @@ from scipy.integrate import quad
 from scipy.optimize import root
 from scipy.stats import lognorm
 
-# Author: Lijing Wang, 2020
+# Author: Lijing Wang, lijing52@stanford.edu, 2020
 # Reference: https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1977.0041 
 # Equation (4.7)
 
